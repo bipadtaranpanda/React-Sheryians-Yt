@@ -1,0 +1,192 @@
+/* General setup */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; /* elegant serif font */
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #111; */
+}
+
+/* Parent Div */
+.parent{
+  height: 100%;
+  width: 100%;
+  background-color: #f3f4f6;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;  /*Mens afetr cover that line next line.*/
+}
+
+/* Whole Card 
+==================*/
+.card{
+  height: 400px;
+  width: 250px;
+  background-color:  #ffffff;
+  /* border-radius: 30px; */
+  padding: 25px;
+  
+  /*  */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+
+}
+
+/*  Top Section 
+==================== */
+.card .top {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*It pushes the first item to the left and the second item to the right:*/
+}
+.top h4{
+  background-color: #52d68a;
+  color: white;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-transform: lowercase;
+}
+.top span{
+  font-size: 13px;
+
+  color: #222;
+  font-weight: 500;
+}
+
+/* Image Section
+================= */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* gap: 8px; */
+}
+
+.profile img{
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+  object-position: center 20%;
+
+  border-radius: 50%;
+  border: 1px solid #dadada;
+
+  margin-bottom: 10px;
+}
+
+
+/* Profile Information */
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px;
+}
+.profile-info span {
+  font-size: 12px;
+  font-weight: 200;
+
+  color: #777;
+  display: block; /*because span normally behaves as an inline element. We want it on its own line.*/
+  margin-bottom: 3px;
+
+}
+
+.profile-info p {
+  font-size: 12px;
+  font-weight: 200;
+
+  color: #777;
+  margin: 0;
+
+}
+
+/*    Skills Section
+========================= */
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills span {
+  padding: 6px 9px;
+  background-color: #f2f2f2;
+
+  border-radius: 15px;
+
+  font-size: 10px;
+  color: #555;
+}
+
+.skills .moreSkills{
+  background-color: #55aaf5;
+  color: #dadada;
+  width: 35px;
+  font-size: 10px;
+  font-weight: 1000;
+  text-align: center;
+  cursor: pointer;
+}
+.skills .moreSkills:hover {
+  color: black;
+}
+
+.description {
+  font-size: 11px;
+  line-height: 1.5; /*controls the vertical space between lines of text*/
+  color: #777;
+  margin: 0;
+}
+
+
+/* Bottom Section
+================== */
+.bottom {
+  box-sizing: border-box;
+  
+  border-top: 1px solid #e5e5e5;
+  padding: 12px;
+  transition: background-color 0.3s;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.bottom button {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 11px;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+}
+
+.bottom:hover {
+  background-color: #55aaf5;
+}
+
+.bottom:hover button {
+  color: white;
+}
